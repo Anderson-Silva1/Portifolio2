@@ -38,6 +38,14 @@
 
   main #banner {
     justify-content: center;
+    padding-top: 100px;
+  }
+
+  main #banner .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -64,9 +72,17 @@
     font-size: 13px;
   }
 
+  main section#banner div.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* * Button */
   main section#banner div.banner-content .banner-content-btn {
     font-size: 1rem;
+    text-align: center;
   }
 }
 
@@ -84,21 +100,21 @@
 
 @media (max-width: 505px) {
   main #banner .banner-content .banner-content-title {
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
   }
 
   main #banner .banner-content .banner-content-title span {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 460px) {
   main #banner .banner-content .banner-content-title {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   main #banner .banner-content .banner-content-title span {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
