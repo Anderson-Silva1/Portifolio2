@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  /* --background: #f7f7f7; */
+  --background: #ffffff;
+  --background2: #edf7ff;
+  --background_teste: #777777;
+  --cor1: #333333;
+  --cor-secundaria: #2196f3;
+  --cor-texto_contraste: #ffffff;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Heebo", serif;
+  /* font-family: "Manrope", serif; */
+  background-color: var(--background);
+}
+
+header {
+  background-color: var(--cor-secundaria);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+}
+
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* ? Coloca uma largura máxima na nossa NavBar para evitar que telas maiores fique fora do padrão*/
+  padding: 0 2rem /* ? 2rem Equivale a 32px*/;
+  margin: 0 auto; /* ? Centraliza nossa NavBar*/
+  height: 80px;
+}
+
+header #navbar .nav-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cor-texto_contraste);
+  transition: color 2s;
+}
+
+header #navbar .nav-brand:hover {
+  color: var(--cor1);
+  transition: color 0.5s;
+}
+
+header #navbar .nav-brand-responsivo {
+  display: none;
+}
+
+header #navbar .nav-brand-responsivo .nav-brand-responsivo-img {
+  width: 100%;
+  max-width: 60px;
+  border-radius: 50%;
+}
+
+/* * Lista de LINKS */
+header #navbar .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: var(--cor-texto_contraste);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 2s;
+}
+header #navbar .nav-list .nav-item a:hover {
+  color: var(--cor1);
+  transition: color 0.5s;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+}
+main h1 {
+  color: black;
+}
+
+main form {
+  background-color: var(--cor-secundaria);
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+}
+
+main form input {
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  text-indent: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: var(--cor-secundaria);
+  border-top: 1px solid #adb2b7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+  font-family: "Manrope", serif;
+}
+
+footer div.name_site h3 {
+  font-size: 2rem;
+}
+
+footer div.logo_contato {
+  display: flex;
+  gap: 10px;
+}
