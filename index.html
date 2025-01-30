@@ -4,27 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/especial.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <header>
       <nav id="navbar">
-        <div>
-          <a href="#" class="nav-brand">Anderson Silva</a>
-          <a href="#" class="nav-brand-responsivo"
-            ><img
-              src="https://avatars.githubusercontent.com/u/168702409?v=4"
-              alt="Anderson da Silva"
-              class="nav-brand-responsivo-img"
-          /></a>
-        </div>
+        <a href="./index.html" class="nav-brand">Anderson Dev</a>
 
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">Works</a></li>
-          <li class="nav-item"><a href="#post">Blog</a></li>
-          <li class="nav-item"><a href="./page/contato.html">Contact</a></li>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#banner-content-btn">Blog</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -44,15 +39,19 @@
           <a
             href="./src/ANDERSON_DA_SILVA_VALENTIM.pdf"
             download="curriculo_anderson_atualizado"
-            ><button class="banner-content-btn">Baixar Curriculo</button></a
+            ><button class="banner-content-btn" id="banner-content-btn">Baixar Curriculo</button></a
           >
         </div>
 
-        <img
-          src="https://avatars.githubusercontent.com/u/168702409?v=4"
-          alt="Anderson Silva"
-          class="banner-image"
-        />
+        <div>
+          <!-- <img
+            src="https://avatars.githubusercontent.com/u/168702409?v=4"
+            alt="Anderson Silva"
+            class="banner-image"
+          /> -->
+
+          <div class="imagem_improvisada"></div>
+        </div>
       </section>
 
       <section id="post">
@@ -118,6 +117,51 @@
                 meses de estágio, fui efetivado no cargo de almoxarifado por
                 quatro meses, mas devido a cortes financeiros, minha equipe foi
                 desligada.
+              </p>
+            </div>
+
+            <div class="post-card">
+              <h3>Técnico em Redes de Computadores</h3>
+              <span>Janeiro 2019 - Dezembro 2021</span>
+              <p>
+                Cursei o ensino médio técnico em Redes de Computadores na
+                <a
+                  href="https://qedu.org.br/escola/23323426-eeep-icaro-de-sousa-moreira"
+                  target="_blank"
+                >
+                  EEEP Ícaro de Sousa Moreira </a
+                >. Durante três anos, adquiri conhecimentos sólidos na área,
+                além de vivenciar experiências enriquecedoras.
+              </p>
+            </div>
+
+            <div class="post-card">
+              <h3>Técnico em Redes de Computadores</h3>
+              <span>Janeiro 2019 - Dezembro 2021</span>
+              <p>
+                Cursei o ensino médio técnico em Redes de Computadores na
+                <a
+                  href="https://qedu.org.br/escola/23323426-eeep-icaro-de-sousa-moreira"
+                  target="_blank"
+                >
+                  EEEP Ícaro de Sousa Moreira </a
+                >. Durante três anos, adquiri conhecimentos sólidos na área,
+                além de vivenciar experiências enriquecedoras.
+              </p>
+            </div>
+
+            <div class="post-card">
+              <h3>Técnico em Redes de Computadores</h3>
+              <span>Janeiro 2019 - Dezembro 2021</span>
+              <p>
+                Cursei o ensino médio técnico em Redes de Computadores na
+                <a
+                  href="https://qedu.org.br/escola/23323426-eeep-icaro-de-sousa-moreira"
+                  target="_blank"
+                >
+                  EEEP Ícaro de Sousa Moreira </a
+                >. Durante três anos, adquiri conhecimentos sólidos na área,
+                além de vivenciar experiências enriquecedoras.
               </p>
             </div>
 
@@ -283,6 +327,7 @@
       </div>
     </footer>
 
+    
     <script src="./js/script.js"></script>
   </body>
 </html>
