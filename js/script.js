@@ -53,7 +53,13 @@ btnViewPost.addEventListener("click", () => {
 // escreverNome();
 
 document.addEventListener("DOMContentLoaded", function () {
-  const nomes = ["Analista de Sistemas", "Desenvolvedor Web", "Designer"];
+  const nomes = [
+    "Analista de Sistemas",
+    "Desenvolvedor Web",
+    "UI/UX Designer",
+    "Especialista em Front-end",
+    "Apaixonado por Tecnologia",
+  ];
   const autoEscrita = document.getElementById("auto-escrita");
 
   let indexNome = 0;
