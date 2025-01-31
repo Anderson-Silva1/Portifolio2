@@ -1,0 +1,60 @@
+/* Celulares pequenos (iPhone SE, Galaxy A01, etc.) */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  main section#banner div img {
+    display: none;
+  }
+  .menu-toggle {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+  }
+}
+
+/* Celulares médios e grandes (iPhone 11+, Galaxy S20, etc.) */
+@media (max-width: 768px) {
+  .menu-toggle {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+  }
+
+  footer div p {
+    text-align: center;
+  }
+}
+
+/* Tablets (iPads, Galaxy Tab, etc.) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Laptops pequenos (MacBook Air, Ultrabooks) */
+@media (max-width: 1280px) {
+  html {
+    font-size: 20px;
+  }
+
+  header nav {
+    max-width: 1200px;
+  }
+}
+
+/* Monitores grandes (Full HD e superiores) */
+@media (max-width: 1600px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+/* Telas gigantes (4K, TVs e UltraWide) */
+@media (min-width: 1920px) {
+  html {
+    font-size: 24px;
+  }
+}
