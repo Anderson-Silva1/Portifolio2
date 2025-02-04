@@ -1,0 +1,125 @@
+@media (max-width: 1073px) {
+  main div.sobre .conteiner-informacoes .h1-informacoes {
+    font-size: 1.9rem;
+  }
+
+  main div.sobre .conteiner-informacoes .h1-informacoes span {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 1019px) {
+  main div.sobre .conteiner-informacoes .h1-informacoes {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 929px) {
+  main div.sobre .conteiner-informacoes .h1-informacoes span {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 882px) {
+  .sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .conteiner-informacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+  }
+
+  .sobre .conteiner-informacoes h1 {
+    color: green;
+    text-align: center;
+  }
+
+  .sobre .conteiner-informacoes p {
+    text-align: center;
+  }
+
+  main .conteiner-blog .posts {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .activate {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .div-hamburguer {
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+
+  .div-hamburguer #menu-hamburguer {
+    cursor: pointer;
+  }
+
+  #nav-list {
+    display: none;
+  }
+
+  #list-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 0;
+    top: 0;
+    right: 0;
+  }
+
+  #list-nav li {
+    opacity: 0.9;
+    width: 400px;
+    height: 100px;
+    background-color: #2196f3;
+    border-radius: 0;
+    line-height: 100px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  #nav-list #list-nav li:hover {
+    opacity: 0.6;
+  }
+  #nav-list #list-nav li a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  #nav-list #list-nav li button {
+    width: 100%;
+    height: 100%;
+    background: none;
+  }
+
+  #nav-list #list-nav li button:hover {
+    color: #fff;
+  }
+}
