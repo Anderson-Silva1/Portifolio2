@@ -61,17 +61,16 @@
   }
 
   .activate {
-    display: block;
+    visibility: visible;
   }
 
   .hide {
-    display: none;
+    visibility: hidden;
   }
 
   .div-hamburguer {
-    display: block;
-    width: 100%;
     display: flex;
+    width: 100%;
     align-items: end;
     justify-content: end;
   }
@@ -81,7 +80,7 @@
   }
 
   #nav-list {
-    display: none;
+    visibility: hidden;
   }
 
   #list-nav {

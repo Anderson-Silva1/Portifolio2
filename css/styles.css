@@ -95,6 +95,10 @@ header div.logo span.logo-2 {
   color: var(--cor-principal);
 }
 
+header nav.nav-list {
+  visibility: visible;
+}
+
 header nav.nav-list ul.list-nav {
   display: grid;
   grid-template-columns: repeat(6, 0.8fr);
@@ -145,10 +149,6 @@ header nav.nav-list ul.list-nav li a:active {
 }
 
 /* Botão contatos */
-
-header nav.nav-list ul.list-nav li:last-child {
-  color: red;
-}
 
 .button {
   width: 100%;

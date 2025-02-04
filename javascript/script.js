@@ -81,18 +81,18 @@ document.addEventListener("DOMContentLoaded", function () {
 // Menu hamburguer
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector("#menu-hamburguer");
-  const divMenuToggle = document.querySelector(".div-hamburguer");
+  // const divMenuToggle = document.querySelector(".div-hamburguer");
   const navList = document.getElementById("nav-list");
 
   menuToggle.addEventListener("click", function () {
-    divMenuToggle.classList.add("hide");
-    navList.classList.add("activate");
+    menuToggle.classList.add("hide");
+    navList.style.visibility = "visible";
   });
 
   // Se clicar fora do menu, ele se fecha e o ícone reaparece
   document.addEventListener("click", function (event) {
     if (!navList.contains(event.target) && !menuToggle.contains(event.target)) {
-      navList.classList.remove("active"); // Esconde o menu
+      navList.style.visibility = "hidden"; // Esconde o menu
       menuToggle.classList.remove("hide"); // Mostra o ícone novamente
     }
   });
